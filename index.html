@@ -2,20 +2,22 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/cards.css" />
     <script src="./js/typewriter.js"></script>
     <script src="./js/scroll.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
     <title>Document</title>
 </head>
 
 <body>
-
     <header>
-        <img src="./images/header_quote.png" class="banner">
+        <img src="./images/header_quote.png" class="banner" />
         <span class="logo">pollymorfism</span>
         <nav>
             <ul>
@@ -24,89 +26,278 @@
                 <li><a href="#">Skills</a></li>
                 <li><a href="#">Projects</a></li>
                 <li><a href="#">Blogs</a></li>
-                <li><a href="#"><button class="btn btn-secondary">DOWNLOAD CV</button></a></li>
-            </ul>
-        </nav>
+                <li>
+                    <a href="#"><button class="btn btn-secondary">DOWNLOAD CV</button></a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
-
     <section class="about">
-        <h1>
-            <span href="" class="typewrite" data-period="2000" data-type='[ "Hi, I am Pranjal Shikhar Sinha.", "I am Creative.", "I Love to Design.", "I Love to Develop." ,
-                          "I am Data Science Enthusiast." , "I love Augmented Reality."]'>
-        <span class="wrap"></span>
-            </span>
-        </h1>
+      <h1>
+        <span
+          href=""
+          class="typewrite"
+          data-period="2000"
+          data-type='[ "Hi, I am Pranjal Shikhar Sinha.", "I am Creative.", "I Love to Design.", "I Love to Develop." ,
+                          "I am Data Science Enthusiast." , "I love Augmented Reality."]'
+        >
+          <span class="wrap"></span>
+        </span>
+      </h1>
     </section>
 
 
-    <br> <br> <br> <br>
-    <br> <br> <br> <br>
-    <br> <br> <br> <br>
+  
 
 
-    <div class="container">
-        <div class="rightbox">
-            <div class="rb-container">
-                <ul class="rb">
-                    <li class="rb-item" ng-repeat="itembx">
-                        <div class="timestamp">
-                            2021
+            <section class="section slider">
+              <h1 style="
+              text-align: center;
+              margin-bottom: 2rem;
+              font-size: 1.8rem;
+              font-weight: 400;
+              text-transform: uppercase;">TIMELINE</h1>
+
+                <div class="section__entry section__entry--center">
+                </div>
+
+                <input type="radio" name="slider" id="slide-1" class="slider__radio">
+                <input type="radio" name="slider" id="slide-2" class="slider__radio">
+                <input type="radio" name="slider" id="slide-3" class="slider__radio" checked>
+                <input type="radio" name="slider" id="slide-4" class="slider__radio">
+                <input type="radio" name="slider" id="slide-5" class="slider__radio">
+
+                <div class="slider__holder">
+
+                <label for="slide-1" class="slider__item slider__item--1 card"
+                  style="background-color: #e36414;">
+                <div class="slider__item-content">
+                  <p class="heading-3 heading-3--light">GirlScript Summer of Code (GSSoC)</p>
+                  <p class="heading-3">Open Source Developer <i>(2021 - Present)</i></p>
+                  <!-- <p class="slider__item-text serif">
+                    Contributing to various Open Source Pojects. For example, projects related to 
+                    Agorithms, Machine Learning, Image Processing, etc.
+                  </p> -->
+                </div>
+              </label>
+                    <!-- Slider__item -->
+
+                <label for="slide-2" class="slider__item slider__item--2 card"
+                style="background-color: #0f4c5c;">
+                <div class="slider__item-content">
+                  <p class="heading-3 heading-3--light">The Sparks Foundation</p>
+                  <p class="heading-3">Data Science Intern <i>(2020)</i></p>
+                  <!-- <p class="slider__item-text serif">
+                    Used Supervised Machine Learning to predict student's marks. Created a Machine Learning 
+                    model to predict the optimum number of clusters. Created a Decision Tree for the Iris Dataset.
+                    Created dashboard for the SampleSuperstore data using Tableau.
+                  </p> -->
+                </div>
+              </label>
+                    <!-- Slider__item -->
+
+                    <label for="slide-3" class="slider__item slider__item--3 card"
+                    style="background-color: #ba181b;">
+                <div class="slider__item-content">
+                  <p class="heading-3 heading-3--light">The Shaadi Times</p>
+                  <p class="heading-3">Data Analytics Intern <i>(2020)</i></p>
+                  <!-- <p class="slider__item-text serif">
+                    The datasets I have used in this task are based on Indian AQI records.
+                    The air quality index is based on the measurement of emissions of
+                    particles (PM2.5 and PM10), ozone (O3), nitrogen dioxide (NO2), sulfur
+                    dioxide (SO2), and carbon monoxide (CO).
+                    Visualize the PM rates of Pre and Post COVID scenarios.
+                  </p> -->
+                </div>
+              </label>
+                    <!-- Slider__item -->
+
+                    <label for="slide-4" class="slider__item slider__item--4 card"
+                    style="background-color: #0f4c5c;">
+                <div class="slider__item-content">
+                  <p class="heading-3 heading-3--light">ALiAS(Amity Linux Assistance Sapience), Lucknow</p>
+                  <p class="heading-3">Team Member <i>(2019 - Present)</i></p>
+                  <!-- <p class="slider__item-text serif">
+                    Meetups of different technologies.
+                    Organised webinars as a part of community.
+                  </p> -->
+                </div>
+              </label>
+                    <!-- Slider__item -->
+
+                    <label for="slide-5" class="slider__item slider__item--5 card"
+                    style="background-color: #e36414;">
+                <div class="slider__item-content">
+                  <p class="heading-3 heading-3--light">Amity University, Lucknow</p>
+                  <p class="heading-3">B.Tech - CS&E <i>(2018 - Present)</i></p>
+                  <!-- <p class="slider__item-text serif"></p> -->
+                </div>
+              </label>
+                    <!-- Slider__item -->
+
+                </div>
+                <!-- Slider Holder -->
+
+
+
+            </section>
+            <!-- Section Slider -->
+
+
+
+            <section class="skills" id="3">
+                <div class="container">
+                    <h1>Skills</h1>
+                    <ul>
+                        <li class="example">
+                            <img src="./images/skills/c.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/cpp.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/python.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/html.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/css.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/js.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/reactjs.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/expressjs.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/nodejs.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/npm.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/mongodb.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/postgresql.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/kotlin.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/firebase.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/heroku.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/vscode.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/github.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                            <img src="./images/skills/git.svg" height="100px" width="100px" />
+                        </li>
+                        <li>
+                <img src="./images/skills/arcore.svg" height="100px" width="100px" />
+              </li>
+              <li>
+                <img src="./images/skills/unity.svg" height="100px" width="100px" />
+              </li>
+                    </ul>
+                </div>
+            </section>
+
+
+
+            <section class="projects" id="4">
+              <h1 style="padding: 200px 0 0 0;">Projects</h1>
+              <div class="card">
+                <div class="image">
+                  <img src="./images/projects/cloak.gif" />
+                </div>
+                <div class="title">
+                  <h1>Invisibilty cloak Filter</h1>
+                </div>
+                <div class="des">
+                  <p style="color: #000;">
+                    Used python and OpenCV to create an "invisibility cloak". It allows
+                    the user to hide themselves while keeping their background intact -
+                    acting like the famous cloak from Harry Potter!
+                  </p>
+                  <button>
+                    <a
+                      class="github-button"
+                      href="https://github.com/pranjalshikhar/invisibility-cloak"
+                      target="_blank"
+                      >
+                      <img
+                        src="./images/social/github.svg"
+                        height="50px"
+                        weight="50px"
+                    />
+                  </a>
+                    </button>
+                    </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="image">
+                            <img src="./images/projects/chatbot.gif" />
                         </div>
-                        <div class="item-title">
-                            <img src="https://img.icons8.com/windows/32/fa314a/free-code-camp.png" />&nbsp <b style="color: #fff;">Open Source Developer (Present)</b>
-                            <br> &emsp;&emsp;GirlScript Summer of Code
+                        <div class="title">
+                            <h1>Telegram ChatBot</h1>
                         </div>
-
-                    </li>
-                    <li class="rb-item" ng-repeat="itembx">
-                        <div class="timestamp">
-                            2020
+                        <div class="des">
+                            <p style="color: #000;">
+                                A Telegram News Bot which provides you Top 5 latest news. It includes a responsive keyboard. It gives the news about a particular country in particular language.
+                            </p>
+                            <button>
+                    <a
+                      class="github-button "
+                      href="https://github.com/pranjalshikhar/NewsBot-Telegram "
+                      target="_blank "
+                      ><img
+                        src="./images/social/github.svg "
+                        height="50px "
+                        weight="50px "
+                    /></a>
+                  </button>
                         </div>
-                        <div class="item-title">
-                            <img src="https://img.icons8.com/windows/32/fa314a/free-code-camp.png" />&nbsp <b style="color: #fff;">Data Science Intern</b>
-                            <br> &emsp;&emsp;The Sparks Foundation
+                    </div>
+
+                    <div class="card ">
+                        <div class="image ">
+                            <img src="./images/projects/drone.gif " height="300px " />
                         </div>
-
-                    </li>
-
-                    <li class="rb-item" ng-repeat="itembx">
-                        <div class="timestamp">
-                            2020
+                        <div class="title ">
+                            <h1>AR drone</h1>
                         </div>
-                        <div class="item-title">
-                            <img src="https://img.icons8.com/windows/32/fa314a/free-code-camp.png" />&nbsp <b style="color: #fff;">Data Analytics Intern</b>
-                            <br> &emsp;&emsp;The Shaadi Times
+                        <div class="des ">
+                            <p style="color: #000; ">
+                                A working drone created using Augmented Reality (AR Foundation & AR Core) for the Android Devices.
+                            </p>
+                            <button>
+                    <a
+                      class="github-button "
+                      href="https://github.com/pranjalshikhar/AR-Drone "
+                      target="_blank "
+                      ><img
+                        src="./images/social/github.svg "
+                        height="50px "
+                        weight="50px "
+                    /></a>
+                  </button>
                         </div>
-                    </li>
-
-                    <li class="rb-item" ng-repeat="itembx">
-                        <div class="timestamp">
-                            2018
-                        </div>
-                        <div class="item-title">
-                            <img src="https://img.icons8.com/windows/32/fa314a/free-code-camp.png" />&nbsp <b style="color: #fff;">B. Tech - CS&E (Present)</b>
-                            <br> &emsp;&emsp;Amity University, Lucknow
-                        </div>
-                    </li>
-
-                    <li class="rb-item" ng-repeat="itembx">
-                        <div class="timestamp">
-                            2016
-                        </div>
-                        <div class="item-title">
-                            <img src="https://img.icons8.com/windows/32/fa314a/free-code-camp.png" />&nbsp <b style="color: #fff;">Senior Secondary & Secondary</b>
-                            <br> &emsp;&emsp;Fatima Senior Secondary School
-                        </div>
-                    </li>
-
-                </ul>
-            </div>
-        </div>
-    </div>
-
-
-
+                    </div>
+                    </section>
 
 
 </body>
